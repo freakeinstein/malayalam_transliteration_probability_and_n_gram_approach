@@ -1,0 +1,80 @@
+<html>
+    <style>
+        .hideMe {
+            -moz-animation: cssAnimation 1s cubic-bezier(.74,.16,.92,.64) 5s forwards;
+            /* Firefox */
+            -webkit-animation: cssAnimation 1s cubic-bezier(.74,.16,.92,.64) 5s forwards;
+            /* Safari and Chrome */
+            -o-animation: cssAnimation 1s cubic-bezier(.74,.16,.92,.64) 5s forwards;
+            /* Opera */
+            animation: cssAnimation 1s cubic-bezier(.74,.16,.92,.64) 5s forwards;
+            -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+        }
+        @keyframes cssAnimation {
+            0% {
+                opacity: 1;
+                overflow:hidden;
+            }
+            99% {
+                opacity: 0;
+                overflow:hidden;
+            }
+            100% {
+                height: 0;
+                overflow:hidden;
+            }
+        }
+        @-webkit-keyframes cssAnimation {
+            
+            to { 
+                height:0;
+                opacity: 0;
+                overflow:hidden;
+            }
+        }
+        #push_message_green{
+            margin-top: 50px;
+            width: 100%;
+            position: absolute;
+            -moz-border-radius-bottomright: 15px;
+            -webkit-border-bottom-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            -moz-border-radius-bottomleft: 15px;
+            -webkit-border-bottom-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            background-color: mediumseagreen;
+        }
+        #push_message_red{
+            margin-top: 50px;
+            width: 100%;
+            position: absolute;
+            -moz-border-radius-bottomright: 15px;
+            -webkit-border-bottom-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            -moz-border-radius-bottomleft: 15px;
+            -webkit-border-bottom-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            -webkit-border-radius: 15px;
+            border-radius: 15px;
+            background-color: indianred;
+        }
+        #push_message_text{
+            padding: 10px;
+            color: antiquewhite;
+            font-size: 20px;
+            text-align: center;
+            font: tahoma;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 400;
+            font-size: 15px;
+        }
+    
+    </style>
+    <div id="push_message_green" class="hideMe">
+    <p id="push_message_text">this is text</p>    
+    </div>
+    <div id="push_message_red" class="hideMe">
+    <p id="push_message_text">this is text</p>     
+    </div>
+</html>

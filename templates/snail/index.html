@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+
+<html >
+
+    <?php
+
+// location of the text file that will log all the ip adresses
+$file = 'logfile.txt';
+
+// ip address of the visitor
+$ipadress = $_SERVER['REMOTE_ADDR'];
+
+// date of the visit that will be formated this way: 29/May/2011 12:20:03
+$date = date('d/F/Y h:i:s');
+
+// name of the page that was visited
+$webpage = $_SERVER['SCRIPT_NAME'];
+
+// visitor's browser information
+$browser = $_SERVER['HTTP_USER_AGENT'];
+
+// Opening the text file and writing the visitor's data
+$fp = fopen($file, 'a');
+
+$text= $ipadress.' - ['.$date.'] '.$webpage.' '.$browser;
+
+fwrite($fp, $text."\r\n");
+
+fclose($fp);
+
+
+
+?>
+    
+    
+  <head>
+    <meta charset="UTF-8">
+    <title>aà´®àµà´® engine</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='style/womb/style.css') }}" />
+      
+      
+  </head>
+
+  <body>
+      <div id="head">
+        <img src="{{ url_for('static',filename='img/ammaic.png') }}" class="logo" />
+      </div>
+      <div id="container">
+          <div id="snail">
+          <!-- img src="childlearningic.png" id="snail" /-->
+          </div><br/>
+          <textarea class="terminal" fixed disabled>$Home/amma>  Initialize learning process  ---   ---   ---   ~$$ WEB PAGE UNDER CONSTRUCTION --- --- ---    10%
+              
+              CHECK ID#286409:      Child is secure - Heartbeat normal ; Brain Activity - 07.56 % ; Dreaming state ; world ID#24d456 Activated for dreaming; linking memory record ID#471930 = IMMEDIATE Mode ; Traininig Data ID#46289152.
+          -----
+          -----   ERROR: Test Case : 3567, 8452, 95530 ----- ----- ----- -----
+          -----   Event ID#572018ll occured; Handler initiated; -----   -----   ---- OverriDE..
+          -----   --------   --------
+          
+          
+          
+          CHECK ID#57ye600:      Child is secure - Heartbeat normal ; Brain Activity - 05.32 % ; Dreaming state ; world ID#24d456 Still Active for dreaming; linked memory record ID#471930 = ACTIVE Mode ;  Traininig Data ID#46289153.
+          -----
+          -----
+          -----   -----   -----   ----
+          -----   --------   ERROR: Test Case : 65033 ----- ----- ----- -----
+          -------- ---------
+          ------
+          ----- ---- ------   ---</textarea>
+          
+          <br/><br/><a href="/indulekha">wake up child: indulekha</a><br/>
+          
+          <p id="loading">See ya during the birthday party.</p>
+          
+          <div id="fcon">   
+            <form action="index.php" method="POST">
+                
+          <p id="loading1">get one-time notification:</p>
+			 <input name="mail" type="email" placeholder="i_am@_mail.com" required />
+			 <button type="submit"></button>
+            </form>
+          </div> 
+          
+          
+          
+          <p id="elegant">UX vision - <b>Elegant</b> : Pleasingly Graceful (&#3378;&#3349;&#3405;&#3383;&#3363;&#3374;&#3402;&#3364;&#3405;&#3364; &#3376;&#3394;&#3370;&#3349;&#3378;&#3405;&#8205;&#3370;&#3368;). </p>
+          <p id="footer"> (C) Dr. Jay Bee</p>
+      </div>
+      
+  </body>
+</html>	

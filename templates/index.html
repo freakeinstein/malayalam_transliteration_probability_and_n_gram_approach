@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Transliteration</title>
+        <meta name="description" content="malayalam transliteration tool">
+        <meta name="keywords" content="Malayalam, Community, transliteration">
+        <meta name="viewport" content="width=device-width">
+        
+        <link rel="stylesheet" href="{{ url_for('static',filename='style/style.mini.css') }}" />
+        <link rel="stylesheet" href="{{ url_for('static',filename='style/new_style.css') }}" />
+        
+		<script src="{{ url_for('static',filename='js/jquery.min.js') }}"></script>
+        <script src="{{ url_for('static',filename='js/elegant.mini.js') }}"></script>
+        <script src="{{ url_for('static',filename='js/nandakumar_original.js') }}"></script>
+        <script src="{{ url_for('static',filename='js/socketio.js') }}"></script>
+        <script src="{{ url_for('static',filename='js/socket_script.js') }}"></script>
+        <script src="{{ url_for('static',filename='js/dynamic_buttons.js') }}"></script>
+    </head>
+    
+    <body>
+        <div class="full-screen" id="typing-pad">
+            <textarea id="typing-area" class="ta_in">2002 മുതൽ സ്വ.മ.ക സജീവമാണ്. അന്നു മുതൽ തന്നെ വിവിധ കമ്പ്യൂട്ടർ തലങ്ങളിലും (ഫോണ്ടുകൾ, നിവേശക രീതികൾ, തിരുത്തലുകൾ, തർജ്ജമ, എഴുത്ത്-സംസാരം യന്ത്രങ്ങൾ, നിഘണ്ടുക്കൾ, അക്ഷരപരിശോധനാ ഉപകരണങ്ങൾ മുതലായവ) വിവിധ ഓപ്പറേറ്റിങ്ങ് സിസ്റ്റങ്ങളിലും പ്രവർത്തിക്കുന്ന മലയാള ഭാഷയിലുള്ള ഉപകരണങ്ങളുടെ നിർമ്മാണത്തിലും വികസനത്തിലും സ്വ.മ.ക ശ്രദ്ധിക്കുന്നു. മലയാളം ഫോണ്ടുകളുടെയും നിരവധി പ്രശസ്ത ഗ്നു/ലിനക്സ് സിസ്റ്റങ്ങൾക്ക് വേണ്ടിയുള്ള ഉപകരണങ്ങളുടേയും പിന്നണിയില്‍ സ്വ.മ.ക യാണ്. പ്രശസ്തമായ പല സ്വതന്ത്ര സോഫ്റ്റ്‌വെയർ പണിയിടങ്ങളുടേയും മറ്റു ഉപകരണങ്ങളുടേയും തർജ്ജമകളും സ്വ.മ.ക പരിപാലിക്കുന്നു.</textarea>
+        </div>
+        <div class="full-screen" id="overlay-layer">
+            <div id="container"> 
+                <table id="all_suggestion_container">
+                    <tr>
+                        <td> <input id="mangleesh-input" dir="rtl" onkeypress="this.style.width = ((this.value.length + 1) * 15) + 'px';" /> </td>
+                        <td> <p id="seperator-symbol">|</p> </td>
+                        <td> <p id="malayalam-suggestion">യന്ത്രങ്ങൾ</p> </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

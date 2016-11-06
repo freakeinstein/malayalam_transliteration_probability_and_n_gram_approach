@@ -1,0 +1,25 @@
+#container{
+	text-align: center;
+}
+table,#dyn_butt{
+	position: fixed;
+	top: 150px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+#all_suggestion_container{
+	text-align: center;
+}
+#dyn_butt{
+	top: 300px;
+	width: 90%;
+	text-align: center
+}
+.dynamic_buttons_for_suggestion{
+    background-color: transparent;
+    font-size: 25px;
+    border: 0px;
+    text-decoration: none;
+    color: bisque;
+    margin: 10px;
+}

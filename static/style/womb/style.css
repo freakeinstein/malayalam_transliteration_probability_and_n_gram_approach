@@ -1,0 +1,153 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:900,400);
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: antiquewhite;
+    text-align: center;
+   // background-image: url("pipesBblur.png");
+}
+#head{
+    width: 100%;
+    height: 50px;
+    background-color: #554b4e;
+    float: left;
+}
+.logo{
+    height: inherit;
+}
+#container{
+    width: 100%;
+    height: 100%;
+  //  float: left;
+   // background-image: url("pipesblur.png");
+}
+#snail{
+    width: 500px;
+    height: 500px;
+    background-image: url("/static/img/childlearningic.png");
+    display: inline-block;
+     vertical-align: top;
+}
+img{
+    //margin-top: 100px;
+    pdding: 0px;
+     vertical-align: top;
+}
+#loading{
+    margin-top: 30px;
+    color: #554b4e;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+#loading1{
+    margin-top: 10px;
+    padding-top: 10px;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+}
+
+.terminal{
+    width: 600px;
+    height: 200px;
+    padding: 10px;
+    border: 7px solid #554b4e;
+    border-radius: 20px;
+    background-color: dimgrey;
+    font-family: 'Raleway', sans-serif;
+    color: greenyellow;
+}
+#elegant{
+    margin-top: 50px;
+    color: #554b4e;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+#footer{
+    margin-top: 5px;
+    margin-bottom: 50px;
+    color: #554b4e;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+}
+
+
+
+
+
+#fcon{
+    width: 100%;
+    background-color: steelblue;
+    //background-color: deepskyblue;
+    padding-bottom: 20px;
+}
+form {
+	//background: #fff;
+   // height: 50px;
+}
+
+input {
+    font-size: 15px;
+    padding-left: 40px;
+    padding-right:  40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 10px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+    outline: none;
+    /*outline: none;
+    margin-right: 5px;
+    width: 150px;
+    height: 30px;
+    padding-left: 9px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	-webkit-box-shadow: 0px 0px 0px 4px rgba(0, 0, 0, .1);
+	box-shadow: 0px 0px 0px 4px rgba(0, 0, 0, .1);*/
+}
+
+form button {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 14px;
+    margin-top: 10px;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	background: #ffffff;
+    background-image: url("http://amma.ml/mail.png");
+    background-repeat: space;
+    background-position: center;
+}
+
+form button:hover {
+	background: #75c8f3;
+    background-image: url("http://amma.ml/mail.png");
+    background-repeat: space;
+    background-position: center;
+}
+
+a{
+    text-decoration: none;
+    color: brown;
+    padding: 4px;
+    margin: 10px;
+    margin-bottom: 20px;
+    border: 1px solid brown;
+    
+}
+
+
+
+
+
