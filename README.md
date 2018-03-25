@@ -1,8 +1,6 @@
 # malayalam transliteration probability and n_gram approach
 This is the source code of my malayalam transliteration mini project.
 
-![emma](https://github.com/freakeinstein/malayalam_transliteration_probability_and_n_gram_approach/blob/master/templates/snail/amma.png?raw=true)
-
 This project makes use of some scripts from SMC's indic library (internal code) and parayumpole (user experience and teaching). So, I've intentionally removed them from this source to avoid any licencing problems. 
 For more details on this project and external credit details, you could read [this](http://freakeinstein.github.io/2016/05/30/Breaking-down-language-transliteration-phonetic-translation-Project-version-1/).
 
