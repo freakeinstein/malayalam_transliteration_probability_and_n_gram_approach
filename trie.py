@@ -49,7 +49,10 @@ def trie(scheme_file):
 	return d # Tested OK !
 
 def normalize_trie(dictionary,min,max,start,end):
-	#print("normalized from {} - {} to {} - {}".format(min,max,start,end))
+	"""
+	print("normalized from {} - {} to {} - {}".format(min,max,start,end))
+	
+	"""
 	for key in dictionary.keys():
 		value = dictionary[key]
 		lst = []
